@@ -32,8 +32,13 @@ function reload() {
     const boxes = document.querySelectorAll(".box");
     boxes.forEach(box => {
         box.addEventListener('mouseover', (e) => {
+            if(box.style.backgroundColor!="transparent")
+            box.style.backgroundColor="transparent";
+
+            else{
                 const randomColor = Math.floor(Math.random() * 16777215).toString(16);
                 box.style.backgroundColor = "#" + randomColor;
+            }
 
         });
     });
