@@ -6,8 +6,8 @@ function gen(num) {
     for (let i = 0; i < num * num; i++) {
         const box = document.createElement('div');
         box.classList.add('box');
-        box.style.height = (1000 / num) + "px";
-        box.style.width = (1000 / num) + "px";
+        box.style.height = (800 / num) + "px";
+        box.style.width = (800 / num) + "px";
         box.style.backgroundColor = "transparent";
         container.appendChild(box);
 
