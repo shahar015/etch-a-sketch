@@ -9,6 +9,7 @@ for(let i=0; i<256; i++)
 const boxes = document.querySelectorAll(".box");
 boxes.forEach(box => {
     box.addEventListener('mouseover',(e) =>{
-        box.style.backgroundColor = "black";
+        const randomColor = Math.floor(Math.random()*16777215).toString(16);
+        box.style.backgroundColor = "#" + randomColor;
     })
 });
