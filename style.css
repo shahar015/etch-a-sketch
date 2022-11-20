@@ -1,5 +1,6 @@
 body{
     display: flex;
+    flex-direction: column;
     width: 100vw;
     height: 100vh;
     justify-content: center;
@@ -7,6 +8,13 @@ body{
 }
 div{
     display: flex;
+}
+
+button{
+    width: 200px;
+    height: 50px;
+    border-radius: 20px;
+    margin: 10px;
 }
 
 .container{
@@ -17,7 +25,5 @@ div{
 
 .box{
     box-sizing: border-box;
-    width: calc(1000px/16);
-    height: calc(1000px/16);
     border: 1px black solid;
 }
