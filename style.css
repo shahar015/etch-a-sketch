@@ -1,0 +1,23 @@
+body{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+div{
+    display: flex;
+}
+
+.container{
+    flex-wrap: wrap;
+    width: 1000px;
+    height: 1000px;
+}
+
+.box{
+    box-sizing: border-box;
+    width: calc(1000px/16);
+    height: calc(1000px/16);
+    border: 1px black solid;
+}
